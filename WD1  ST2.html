@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Responsive Product Grid</title> 
+ 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #cccccc; 
+            margin: auto; 
+            padding: 20px; 
+        } 
+ 
+        h1 { 
+            text-align: center; 
+        } 
+ 
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 20px; 
+            padding: 20px; 
+        } 
+ 
+        .product { 
+            background: white; 
+            padding: 15px; 
+            border: 1px solid #000000; 
+            border-radius: 8px; 
+            text-align: center; 
+        
+        } 
+ 
+        .product img { 
+            width: 100%; 
+            height: 180px; 
+            object-fit:contain; 
+            border-radius: 5px; 
+        } 
+ 
+        .product h3 { 
+            margin: 15px; 
+            font-size: 1.1rem; 
+        } 
+ 
+        .product p { 
+            color: #777; 
+            font-size: 0.95 em; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+    <h1>Responsive Product Grid</h1> 
+ 
+    <div class="grid"> 
+        <div class="product"> 
+            <img src="phone.webp" alt="Product"> 
+            <h3>phone</h3> 
+            <p>INR 70000</p> 
+        </div> 
+ 
+	  <div class="product"> 
+            <img src="headphones.webp" alt="Product"> 
+            <h3>Headphones</h3> 
+            <p>INR 5000</p> 
+        </div> 
+
+        <div class="product"> 
+            <img src="tablet.webp" alt="Product"> 
+            <h3>Tablet</h3> 
+            <p>INR 30000</p> 
+        </div> 
+ 
+      
+    </div> 
+ 
+</body> 
+</html>
